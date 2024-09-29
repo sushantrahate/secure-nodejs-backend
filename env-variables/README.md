@@ -29,7 +29,7 @@ my-node-app/
 ├── package.json
 ├── src/
 │   ├── config/
-│   │   ├── env-config.ts  // Configuration Files
+│   │   ├── env-config.ts  // Configuration file
 │   │   └── env-schema.ts  // Schema for environment variables
 │   └── app.ts
 ```
