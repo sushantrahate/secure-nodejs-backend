@@ -21,7 +21,7 @@ Focused on building secure and reliable Node.js applications
     <td><a href="./graceful-shutdown">graceful-shutdown</a></td>
   </tr>
   <tr>
-    <td>2</td>
+    <td>3</td>
     <td>Authentication Strategies</td>
     <td><a href="./authentication-strategies">authentication-strategies</a></td>
   </tr>
