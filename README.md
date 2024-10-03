@@ -16,9 +16,14 @@ Focused on building secure and reliable Node.js applications
     <td><a href="./env-variables">env-variables</a></td>
   </tr>
   <tr>
-  <td>2</td>
-  <td>Graceful Shutdown</td>
-  <td><a href="./graceful-shutdown">graceful-shutdown</a></td>
+    <td>2</td>
+    <td>Graceful Shutdown</td>
+    <td><a href="./graceful-shutdown">graceful-shutdown</a></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Authentication Strategies</td>
+    <td><a href="./authentication-strategies">authentication-strategies</a></td>
   </tr>
 </table>
 
