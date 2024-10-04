@@ -48,6 +48,8 @@ const generateToken = (userId: string) => {
 
 A refresh token is used to obtain new access tokens without requiring the user to log in again. This ensures a smooth experience for users without compromising security.
 
+[Here Is Repo for JWT Authentication With Refresh Token as HTTP-only Cookie](https://github.com/sushantrahate/jwt-auth-refresh-token-as-http-only-cookie)
+
 **Why its important:**
 
 Limits exposure of short-lived access tokens.
