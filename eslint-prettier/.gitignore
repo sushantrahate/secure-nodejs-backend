@@ -1,0 +1,13 @@
+.history/*
+
+# misc
+npm-debug.log
+testem.log
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Ignore Node.js modules
+node_modules/
+dist/

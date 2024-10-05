@@ -22,6 +22,11 @@ Focused on building secure and reliable Node.js applications
   </tr>
   <tr>
     <td>3</td>
+    <td>ESLint & Prettier Setup with TypeScript</td>
+    <td><a href="./eslint-prettier">eslint-prettier</a></td>
+  </tr>
+  <tr>
+    <td>4</td>
     <td>Authentication Strategies</td>
     <td><a href="./authentication-strategies">authentication-strategies</a></td>
   </tr>
