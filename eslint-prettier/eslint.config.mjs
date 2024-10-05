@@ -34,7 +34,7 @@ export default [
   ...tseslint.configs.stylistic,
 
   // Plugin for better Promise handling and best practices
-  pluginPromise,
+  pluginPromise.configs['flat/recommended'],
   {
     files: ['__tests__/**/*.{js,ts,jsx,tsx}'], // Apply these rules to your test files
     ...jest.configs['flat/recommended'], // Extend recommended Jest ESLint rules
