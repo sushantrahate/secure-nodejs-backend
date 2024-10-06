@@ -133,6 +133,7 @@ Sessions expire after a period of inactivity. Implement a session expiration tim
 **Why its important:**
 
 Reduces the risk of an unauthorized person accessing the session if the user forgets to log out.
+
 Implementation:
 
 ```typescript
@@ -146,6 +147,7 @@ Prevent brute force attacks by locking out accounts after several failed login a
 **Why its important:**
 
 Mitigates brute force attacks by limiting login attempts.
+
 Implementation:
 
 ```typescript
@@ -292,6 +294,7 @@ Configure CORS to restrict which origins are allowed to access the API. Only tru
 
 Prevents unauthorized sites from making requests to your server.
 Protects against CSRF (Cross-Site Request Forgery) attacks.
+
 Implementation:
 
 ```typescript
