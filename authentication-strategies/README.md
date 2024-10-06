@@ -185,6 +185,7 @@ Users can reset their passwords through a secure process. Use a time-limited, on
 **Why its important:**
 
 Provides users a secure way to recover accounts without compromising security.
+
 Implementation:
 
 ```typescript
@@ -215,7 +216,75 @@ passwordUpdatedAt: { type: Date, default: Date.now }, // When the password was l
 // You can Check Expiration on Login or have a corn job to find and notify users via email.
 ```
 
-### 11. Cross-Origin Resource Sharing (CORS) Configuration
+### 11 . Implementing Strong Password Policies
+
+Strong password policies help prevent unauthorized access and minimize the risk of brute-force attacks, dictionary attacks, and credential stuffing.
+
+Implementation:
+
+```js
+import validator from 'validator';
+
+const password = 'User@1234';
+if (
+  !validator.isStrongPassword(password, {
+    minLength: 8,
+    minLowercase: 1,
+    minUppercase: 1,
+    minNumbers: 1,
+    minSymbols: 1,
+  })
+) {
+  throw new Error('Password does not meet complexity requirements.');
+}
+```
+
+### 12. User-Specific Token Revocation
+
+User-specific token revocation is the process of invalidating a single user’s tokens without affecting others.
+
+It’s useful in cases like:
+
+- Suspicious activity detected on an account
+- A user requests token revocation for security
+- The account is disabled or suspended
+- A token is stolen or leaked
+
+How it Works:
+
+1. Token Structure:
+
+Tokens (e.g., JWTs) contain user data and a tokenVersion. The tokenVersion is stored in the database to track the validity of tokens for each user.
+
+1. Token Verification:
+
+When a request is made, the server decodes the token and compares the tokenVersion in the token with the version stored in the database. If they match, the token is valid; if not, the token is invalidated.
+
+3. Token Revocation:
+
+To revoke all tokens for a user, simply increment the tokenVersion in the database. All tokens with the previous version are automatically invalidated.
+
+Implementation:
+
+```js
+// Schema: token_version INT DEFAULT 1
+
+// JWT Creation
+const createToken = (user) => {
+  const payload = { userId: user.id, tokenVersion: user.tokenVersion };
+  return jwt.sign(payload, SECRET_KEY, { expiresIn: '1h' });
+};
+
+// Token Validation
+if (user.tokenVersion !== decoded.tokenVersion) {
+  throw new Error('Invalid token: version mismatch');
+}
+
+// To revoke, increment tokenVersion
+user.tokenVersion++;
+```
+
+### 13. Cross-Origin Resource Sharing (CORS) Configuration
 
 Configure CORS to restrict which origins are allowed to access the API. Only trusted domains should be allowed to send requests to your server.
 
