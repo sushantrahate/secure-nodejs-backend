@@ -8,6 +8,13 @@ Prerequisites
 
 - Node.js v18.18.0 or above for ESLint 9 Support
 
+## Linting
+
+```bash
+npm run lint
+npm run lint:fix // Will check for linting errors and attempt to automatically fix
+```
+
 ## Project Setup Steps if You Want to Set Up from Scratch
 
 1.  Install TypeScript and necessary packages
