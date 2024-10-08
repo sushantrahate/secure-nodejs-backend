@@ -30,6 +30,11 @@ Focused on building secure and reliable Node.js applications
     <td>Authentication Strategies</td>
     <td><a href="./authentication-strategies">authentication-strategies</a></td>
   </tr>
+  <tr>
+    <td>5</td>
+    <td>Unified Response Structure</td>
+    <td><a href="./unified-response-structure">unified-response-structure</a></td>
+  </tr>
 </table>
 
 If you liked it then please show your love by ⭐ the repo
