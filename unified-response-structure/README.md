@@ -4,6 +4,42 @@ This project provides a utility function `createResponse` standardizes the struc
 
 It helps developers create a consistent structure across the application and Scale response structure in future.
 
+## Install Package
+
+[https://jsr.io/@sushantrahate/unified-response](@sushantrahate/unified-response)
+
+```bash
+# Deno >= 2.x.x
+deno add jsr:@sushantrahate/unified-response
+
+# Node.js with ESM
+npx jsr add @sushantrahate/unified-response
+
+# Bun
+bunx jsr add @sushantrahate/unified-response
+
+# Yarn
+yarn dlx jsr add @sushantrahate/unified-response
+
+# pnpm
+pnpm dlx jsr add @nshiab/simple-data-analysis
+```
+
+## Import
+
+```typescript
+import { createResponse } from '@sushantrahate/unified-response';
+Use;
+
+// Basic
+const response = createResponse(true, 200, 'Request was successful', {
+  user: 'John Doe',
+});
+
+// Output
+console.log(response);
+```
+
 ## Features
 
 1. Consistency
