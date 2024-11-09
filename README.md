@@ -35,6 +35,11 @@ Focused on building secure and reliable Node.js applications
     <td>Unified Response Structure</td>
     <td><a href="./unified-response-structure">unified-response-structure</a></td>
   </tr>
+   <tr>
+    <td>6</td>
+    <td>Role-Based Access Control</td>
+    <td><a href="./https://github.com/sushantrahate/role-based-access-control">role-based-access-control</a></td>
+  </tr>
 </table>
 
 If you liked it then please show your love by ⭐ the repo
