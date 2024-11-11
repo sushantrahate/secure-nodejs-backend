@@ -1,6 +1,6 @@
-# Authentication Strategies
+# Node.js Authentication: Best Practices and Key Strategies
 
-This project showcases secure login strategies for Node.js using ```typescript, implementing multiple security techniques to safeguard user credentials, sessions, and account access.
+This project showcases secure login strategies for Node.js, implementing multiple security techniques to safeguard user credentials, sessions, and account access.
 
 ## Key Security Features
 
