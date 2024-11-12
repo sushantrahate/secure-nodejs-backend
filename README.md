@@ -32,8 +32,8 @@ Focused on building secure and reliable Node.js applications
   </tr>
   <tr>
     <td>5</td>
-    <td>Authentication Strategies</td>
-    <td><a href="https://github.com/sushantrahate/jwt-auth-refresh-token-as-http-only-cookie">JWT Authentication With Refresh Token as HTTP-only Cookie</a></td>
+    <td>JWT Authentication With Refresh Token as HTTP-only Cookie</td>
+    <td><a href="https://github.com/sushantrahate/jwt-auth-refresh-token-as-http-only-cookie">jwt-auth-refresh-token-as-http-only-cookie</a></td>
   </tr>
   <tr>
     <td>6</td>
