@@ -31,8 +31,8 @@ JWT (JSON Web Token) is used for token-based authentication, allowing stateless 
 
 **Why its important:**
 
-Stateless: No need for session storage on the server.
-Secure token can carry claims (user ID, roles) without exposing sensitive information.
+- Stateless: No need for session storage on the server.
+- Secure token can carry claims (user ID, roles) without exposing sensitive information.
 
 Implementation:
 
@@ -52,8 +52,8 @@ A refresh token is used to obtain new access tokens without requiring the user t
 
 **Why its important:**
 
-Limits exposure of short-lived access tokens.
-Refresh tokens are stored more securely (e.g., in a database or HTTP-only cookie).
+- Minimizes exposure by using short-lived access tokens.
+- Refresh tokens are stored more securely (e.g., in a database or HTTP-only cookie).
 
 Implementation:
 
@@ -69,8 +69,8 @@ Store sensitive tokens such as refresh tokens in HTTP-only cookies. This prevent
 
 **Why its important:**
 
-Shields tokens from being stolen by malicious scripts.
-Reduces the risk of token exposure through client-side code.
+- Shields tokens from being stolen by malicious scripts.
+- Reduces the risk of token exposure through client-side code.
 
 Implementation:
 
@@ -88,7 +88,7 @@ JWT tokens do not have built-in revocation. To invalidate tokens (e.g., on logou
 
 **Why its important:**
 
-Prevents previously issued tokens from being used after logout or account compromise.
+- Prevents previously issued tokens from being used after logout or account compromise.
 
 Implementation:
 
@@ -104,7 +104,7 @@ Ensure that only one session is active for a user at any given time. When a new 
 
 **Why its important:**
 
-Prevents concurrent logins from multiple devices or locations, enhancing account security.
+- Prevents concurrent logins from multiple devices or locations, enhancing account security.
 
 Implementation:
 
@@ -132,7 +132,7 @@ Sessions expire after a period of inactivity. Implement a session expiration tim
 
 **Why its important:**
 
-Reduces the risk of an unauthorized person accessing the session if the user forgets to log out.
+- Reduces the risk of an unauthorized person accessing the session if the user forgets to log out.
 
 Implementation:
 
@@ -146,7 +146,7 @@ Prevent brute force attacks by locking out accounts after several failed login a
 
 **Why its important:**
 
-Mitigates brute force attacks by limiting login attempts.
+- Mitigates brute force attacks by limiting login attempts.
 
 Implementation:
 
@@ -292,8 +292,8 @@ Configure CORS to restrict which origins are allowed to access the API. Only tru
 
 **Why its important:**
 
-Prevents unauthorized sites from making requests to your server.
-Protects against CSRF (Cross-Site Request Forgery) attacks.
+- Prevents unauthorized sites from making requests to your server.
+- Protects against CSRF (Cross-Site Request Forgery) attacks.
 
 Implementation:
 
