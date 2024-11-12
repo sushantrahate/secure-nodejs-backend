@@ -137,7 +137,25 @@ Sessions expire after a period of inactivity. Implement a session expiration tim
 Implementation:
 
 ```typescript
-const sessionExpirationTime = 15 _ 60 _ 1000; // 15 minutes
+const sessionExpirationTime = 15 * 60 * 1000; // 15 minutes
+const IDLE_TIMEOUT = 15 * 60 * 1000;
+
+// User Schema
+lastActivity: { type: Date, default: Date.now }, // Track last activity timestamp
+
+// in auth middleware
+const now = new Date();
+const idleTime = now - new Date(user.lastActivity);
+
+if (idleTime > IDLE_TIMEOUT) {
+  // Token is still valid, but session is idle for too long
+  return res.status(401).json({ message: 'Session expired due to inactivity' });
+}
+
+// Else update last activity timestamp if within idle timeout
+user.lastActivity = now;
+await user.save();
+
 ```
 
 ### 8. Account Lockout Mechanism
