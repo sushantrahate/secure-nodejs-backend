@@ -32,11 +32,16 @@ Focused on building secure and reliable Node.js applications
   </tr>
   <tr>
     <td>5</td>
+    <td>Authentication Strategies</td>
+    <td><a href="https://github.com/sushantrahate/jwt-auth-refresh-token-as-http-only-cookie">JWT Authentication With Refresh Token as HTTP-only Cookie</a></td>
+  </tr>
+  <tr>
+    <td>6</td>
     <td>Unified Response Structure</td>
     <td><a href="./unified-response-structure">unified-response-structure</a></td>
   </tr>
    <tr>
-    <td>6</td>
+    <td>7</td>
     <td>Role-Based Access Control</td>
     <td><a href="./https://github.com/sushantrahate/role-based-access-control">role-based-access-control</a></td>
   </tr>
