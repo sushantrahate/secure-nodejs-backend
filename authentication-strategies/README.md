@@ -23,6 +23,19 @@ const hashPassword = async (password: string): Promise<string> => {
   const salt = await bcrypt.genSalt(saltRounds);
   return await bcrypt.hash(password, salt);
 };
+
+// Create and save the user in the database
+const newUser = new User({ username, password: hashPassword });
+await newUser.save();
+
+// Login API
+const { username, password } = req.body;
+
+const user = users.find((u) => u.username === username);
+if (!user) return res.status(400).send('User not found');
+
+const isPasswordValid = await bcrypt.compare(password, user.password);
+if (!isPasswordValid) return res.status(400).send('Incorrect password');
 ```
 
 ### 2. Token-Based Authentication
