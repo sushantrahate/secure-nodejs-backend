@@ -209,9 +209,19 @@ Provides users a secure way to recover accounts without compromising security.
 Implementation:
 
 ```typescript
+
+// User Schema
+resetPasswordToken: String,
+resetPasswordExpires: Date,
+
+// Use crypto.randomBytes() to generate a secure token instead of Math.random(), Math.random() hex are easier for attackers to guess or brute force.
 const generateResetToken = () => {
   return crypto.randomBytes(20).toString('hex');
 };
+
+const token = generateResetToken();
+user.resetPasswordExpires = Date.now() + 3600000; // 1 hour from now
+
 ```
 
 ### 10. Password Expiration and Restricting Past 3 Passwords
