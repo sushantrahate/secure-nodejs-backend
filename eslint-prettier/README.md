@@ -20,7 +20,7 @@ npm run lint:fix // Will check for linting errors and attempt to automatically f
 1.  Install TypeScript and necessary packages
 
 ```js
-npm install typescript ts-node @types/node @tsconfig/node20 typescript-eslint/parser --save-dev
+npm install typescript ts-node @types/node @tsconfig/node20 @typescript-eslint/eslint-plugin typescript-eslint/parser --save-dev
 ```
 
 2. Create tsconfig.json and copy config from Repo.
