@@ -38,7 +38,7 @@ Focused on building secure and reliable Node.js applications
   <tr>
     <td>6</td>
     <td>Unified Response Structure</td>
-    <td><a href="./unified-response-structure">unified-response-structure</a></td>
+    <td><a href="https://github.com/sushantrahate/uni-response">Unified Response Structure</a></td>
   </tr>
    <tr>
     <td>7</td>
